@@ -66,7 +66,7 @@ driver = webdriver.Firefox(executable_path=path, options=options)
 # Get a website via Selenium
 driver.get("https://new.csfd.cz/televize/horizontalne/")
 
-# Accept the cookies and waiting till a cookies window disappear
+# Accept the cookies and waiting till cookies window disappear
 print("Waiting for an element.")
 WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, '#onetrust-accept-btn-handler')))
 driver.find_element_by_css_selector('#onetrust-accept-btn-handler').click()
