@@ -50,7 +50,7 @@ where movie_link = '{link}';
 
 
 # Connection to database and a cursor declaring
-db_conn = mysql.connector.connect(host="192.168.0.39", user="jenda", passwd="heslo", database="db_home")
+db_conn = mysql.connector.connect(host="host", user="user", passwd="password", database="db")
 print("Successful connection to database.")
 cursor = db_conn.cursor()
 
