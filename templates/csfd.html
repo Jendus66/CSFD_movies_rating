@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="static\styles\csfd.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <title>Seznam filmů</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="main">
+
+        <div class="middle">
+            <h1>Přehled filmů</h1>
+
+            {%for film in filmy%}
+            <div class="film">
+                <div class="picture">
+                    <img src={{film[5]}} alt="">
+                </div>
+                <div class="text">
+                    <h4><a href={{film[3]}} target="_blank">{{film[0]}}</a></h4>
+                    <p>{{film[1]}}</p>
+                    <p><a href={{film[7]}} target="_blank">{{film[6]}}</a> / {{film[2]}}</p>
+                </div>
+            
+                <div class="rating">
+                    <h2>{{film[4]}}</h2>
+                </div> 
+            </div>
+            {%endfor%}
+
+
+        </div>
+
+    </div>
+</body>
+</html>
