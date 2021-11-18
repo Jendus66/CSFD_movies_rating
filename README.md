@@ -20,6 +20,7 @@ The script has these parts:
 **database**
 
 This script requires a database running. I use MariaDB for this purpose. There needs to exist a table called *csfd_movies_calendar* in which data are saved during the script run. SQL query for a table creation:
+
 *create table csfd_movies_calendar(
 name varchar(100),
 category varchar(100),
